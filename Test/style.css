@@ -1,0 +1,431 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: 'Tinkoff Sans', sans-serif;
+	color:#333333
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	font-family: 'Tinkoff Sans', sans-serif;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	background-color: #fff;
+	color: black;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+p{font-family: 'NeueHaasUnicaW1G-Regular';}
+a, a:visited{ text-decoration: none; color: #000}
+a:hover{text-decoration: underline;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+section{width: 100%}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;color: #000;font-family: 'Tinkoff Sans', sans-serif;}
+/*--------------------*/
+
+
+
+/* Шапка сайта */
+.container{
+	max-width: 785px;
+	border: 1px solid #DCE2E8;
+	margin-left: 12.5vw;
+	margin-top: 80px;
+}
+
+
+
+.container-elem{
+	margin: 50px 50px;
+
+}
+
+.button__a{
+	display: block;
+	background-color: #FFDD2D;
+	font-family: 'Tinkoff Sans', sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 13px;
+	line-height: 20px;
+	width: 94px;
+	height: 26px;
+	text-align: center;
+	padding-top: 2px;
+	
+
+
+}
+
+.button__a a{
+	color:#333333
+}
+
+.button__a a:visited{
+	color:#333333
+}
+
+.button{
+	margin-bottom: 15px;
+}
+
+
+.title__h1{
+	font-family: 'Tinkoff Sans', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 44px;
+	font-feature-settings: 'liga' off;
+	color: #111111;
+}
+
+.title_margin{
+	margin-bottom: 40px;
+}
+
+header .title h3{
+	font-style: normal;
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 28px;
+	color: #808C9E;
+}
+
+.header__hash-row p, .header__hash-row a{
+	color: #808C9E;
+}
+
+.header__hash-row{
+	display: flex;
+	flex-direction: row;
+	max-width: 460px;
+	justify-content: space-between;
+}
+
+.header__hash-row a{
+	padding-left: 2px;
+}
+
+
+
+.logo{
+	width: 80px;
+	height: 80px;
+	background-color: #f1f3f5;
+	border-radius:  80px;
+}
+
+.header__logo_mobile-v{
+	display: none;
+}
+
+.header__logo_desctop-tablet-v{
+	display: block;
+}
+
+header.container-elem{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.v-two{
+	display: none;
+}
+
+
+
+/* Контент сайта */
+
+section p{
+	font-style: normal;
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 28px;
+}
+
+main h2{
+	font-style: normal;
+	font-weight: 400;
+	font-size: 28px;
+	line-height: 32px;
+	padding-bottom: 16px;
+	color: #333333;
+}
+
+section{
+	margin-bottom: 50px;
+}
+
+.decision h2 span{
+	font-style: normal;
+	font-weight: 400;
+	font-size: 28px;
+	line-height: 32px;
+
+
+}
+
+.decision h2{
+	position: relative;
+}
+
+.decision h2 span::before{
+	content: url(img/arrow.svg);
+	position: relative;
+	bottom: 2.5px;
+}
+
+.decision h2 a{
+	color: #597DB3;
+}
+
+.integration .section__h2 h2:nth-child(2){
+	display: none;
+}
+
+/* Футер */
+
+.autor__card{
+	display: flex;
+	max-width: 290px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo_card{
+	background:  url(img/avatar.svg) no-repeat center, #F1F3F5 ;
+}
+
+.autor__text{
+	padding-left: 16px;
+}
+
+.autor__name h3 { 
+	font-weight: 700;
+	padding-bottom: 4px;
+	font-size: 15px;
+}
+
+
+.autor__about, .footer .editor, .footer a {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 20px;
+	color: #808C9E;
+}
+
+.footer{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.footer a{
+	color: #597DB3;
+}
+
+.autor__about br{
+	display: none;
+}
+
+.autor__text p{
+	color: #808C9E;
+}
+
+@media(max-width: 768px){
+	.container{
+		max-width: 610px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 80px;
+	}
+
+	.title_margin{
+		margin-bottom: 30px;
+	}
+
+	.header__hash-row{
+		max-width: 300px;
+	}
+
+	.header__hash-row div:nth-child(3){
+		display: none;
+	}
+
+	.v-one{
+		display: none;
+	}
+
+	.v-two{
+		display: block;
+	}
+
+	.title__h1{
+		font-size: 21px;
+		line-height: 28px;
+	}
+
+	 section , footer p{
+		font-size: 15px;
+		line-height: 24px;
+	}
+
+	footer p{
+		line-height: 20px;
+	}
+
+	section h2{
+		font-size: 28px;
+		line-height: 32px;
+	}
+
+	.integration .section__h2 h2:nth-child(1){
+		display: none;
+	}
+
+	.integration .section__h2 h2:nth-child(2){
+		display: block;
+	}
+
+	.integration .section__text p:nth-child(1), .integration .section__text p:nth-child(4), .integration .section__text br{
+		display: none;
+	}
+
+
+}
+
+
+@media(max-width: 320px){
+	.header__logo_desctop-tablet-v{
+		display: none;
+	}
+
+	.header__logo_mobile-v{
+		display: block;
+		margin-bottom: 10px;
+	}
+
+	.title_margin{
+		margin-bottom: 15px;
+	}
+
+	.title__h1{
+		font-size: 24px;
+		line-height: 28px;
+	}
+
+	 section , footer p{
+		font-size: 15px;
+		line-height: 24px;
+	}
+
+	footer p{
+		line-height: 20px;
+	}
+
+	section h2{
+		font-size: 28px;
+		line-height: 32px;
+	}
+
+	header .title h3{
+		font-size: 15px;
+	}
+
+	.header__hash-row{
+		flex-direction: column;
+	}
+
+	.header__hash-row div:nth-child(3){
+		display: block;
+	}
+
+	.header__hash-row p{
+		line-height: 24px;
+	}
+
+	.container{
+		border: 0;
+	}
+
+	h2{
+		font-style: 21px;
+	}
+
+	p{
+		font-style: 15px;
+	}
+
+	h1,h2,h3,p{
+		width: 240px;
+	}
+
+	.autor__text{
+		width: 260px;
+	}
+
+	.autor__text p {
+		color: #808C9E;
+	}
+
+	.autor__about br{
+		display: block;
+	}
+
+	.footer{
+		flex-direction: column;
+	}
+
+	.editor{
+		margin-bottom: 8px;
+	}
+}
+
+@font-face{
+	src:url(https://secrets.tinkoff.ru/wp-content/themes/tbusiness-redesign/assets/vendor/fonts/TinkoffSans.woff2) format("woff2"),
+	url(https://secrets.tinkoff.ru/webinar-uvelichit-prodazhi-wildberries/wp-content/themes/tbusiness-redesign/assets/vendor/fonts/TinkoffSans.woff) format("woff");
+	font-family:"Tinkoff Sans";
+	font-weight:400;
+	font-display:fallback;
+}
+
+@font-face{
+	src:url(https://secrets.tinkoff.ru/wp-content/themes/tbusiness-redesign/assets/vendor/fonts/NeueHaasUnicaW1G-Regular.woff2) format('woff2');
+	font-family: 'NeueHaasUnicaW1G-Regular';
+	font-weight:400;
+	font-display:fallback;
+}
+
+@font-face{
+	src:url(https://secrets.tinkoff.ru/wp-content/themes/tbusiness-redesign/assets/vendor/fonts/NeueHaasUnicaW1G-Bold.woff2) format('woff2');
+	font-family: 'NeueHaasUnicaW1G';
+	font-weight: 700px;
+	font-display:fallback;
+}
